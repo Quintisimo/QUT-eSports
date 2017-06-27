@@ -9,11 +9,11 @@
       "Jason C F Lau": ""
     },
     "games": {
-      "Overwatch": "",
+      "Overwatch": "../images/games/overwatch.png",
       "Counter Strike: Global Offensive": "../images/games/csgo.png",
-      "League of Legends": "",
-      "Dota 2": "",
-      "HearthStone": ""
+      "League of Legends": "../images/games/lol.png",
+      "Dota 2": "../images/games/dota2.jpg",
+      "HearthStone": "../images/games/hearthstone.jpg"
     }
   }
 }

@@ -6,13 +6,12 @@ header
     a(href='games') Games
     a(href='index') Home
 
-section#about-wrapper
-  #about
-    h1 About Us
-    #staff
-      each person, index in staff
-        .person
-          img(src='http://fillmurray.com/300/300')
-          span #{ index }
-          
-    p #{ about }
+section#about
+  h1 About Us
+  #staff
+    each person, index in staff
+      .person
+        img(src='http://fillmurray.com/300/300')
+        span #{ index }
+        
+  p #{ about }
