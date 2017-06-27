@@ -1,9 +1,12 @@
 {
   "globals": {
-    "title": "QUT eSports",
+    "title": "QUT eSPORTS",
+    "lead": "We are eSports",
     "about": "",
     "staff": {
-      "": ""
+      "Dylan Poulus": "",
+      "Michael Trotter": "",
+      "Jason C F Lau": ""
     }
   }
 }

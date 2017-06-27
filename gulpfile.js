@@ -14,7 +14,12 @@ gulp.task('serve', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(["includes/jade/*.jade", "public/index.jade", "includes/sass/*.sass", "public/css/*.sass", "public/js/*.js"], browserSync.reload);
+  gulp.watch("includes/jade/*.jade", browserSync.reload);
+  gulp.watch("public/index.jade", browserSync.reload);
+  gulp.watch("includes/sass/*.sass", browserSync.reload);
+  gulp.watch("public/css/*.sass", browserSync.reload);
+  gulp.watch("public/*.jade", browserSync.reload);
+  gulp.watch("public/js/*.js", browserSync.reload);
 });
 
 gulp.task('default', ['serve', 'watch']);
