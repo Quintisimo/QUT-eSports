@@ -3,7 +3,7 @@ var browserSync = require('browser-sync').create();
 var harp = require('harp');
 
 gulp.task('serve', function () {
-  harp.server('.', {
+  harp.server('./', {
     port: 9000
   }, function() {
     browserSync.init({
@@ -14,11 +14,9 @@ gulp.task('serve', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch("includes/jade/*.jade", browserSync.reload);
-  gulp.watch("public/index.jade", browserSync.reload);
-  gulp.watch("includes/sass/*.sass", browserSync.reload);
-  gulp.watch("public/css/*.sass", browserSync.reload);
   gulp.watch("public/*.jade", browserSync.reload);
+  gulp.watch("sass/*.sass", browserSync.reload);
+  gulp.watch("public/css/*.sass", browserSync.reload);
   gulp.watch("public/js/*.js", browserSync.reload);
 });
 
