@@ -3,7 +3,7 @@ var browserSync = require('browser-sync').create();
 var harp = require('harp');
 
 gulp.task('serve', function () {
-  harp.server('./', {
+  harp.server('.', {
     port: 9000
   }, function() {
     browserSync.init({
