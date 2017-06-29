@@ -1,0 +1,21 @@
+#events
+  #calendar
+    width: calc(100% - 60px)
+    margin: 20px 30px
+
+    .fc-center
+      h2
+        margin-left: 100px
+        text-align: center
+
+    .fc-other-month span
+      opacity: 0.6
+
+    .fc-day
+      background: darken($calendar, 30%)
+
+      &.fc-today
+        background: darken($calendar, 50%)
+
+    .fc-widget-header
+      background: darken($calendar, 70%)
