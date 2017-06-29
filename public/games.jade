@@ -1,11 +1,8 @@
-header
-  img(src='images/logo.png')
-  nav
-    a(href='about') About
-    a(href='index') Home
-
+include _mixin
++header("games")
 section#games
-  h1 Our Games
+  h1 Our Games 
+  p (Click the banner to learn more)
   each game, index in games
     .game
       img(src='#{ game.image }', title='Click to learn more..')  

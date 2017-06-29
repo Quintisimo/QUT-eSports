@@ -1,0 +1,29 @@
+mixin header(page)
+  if page == 'index'
+    header
+      img(src='images/logo.png')
+      nav
+        a(href='games') Games
+        a(href='about') About
+        a(href='events') Events
+  if page == 'about'
+    header
+      img(src='images/logo.png')
+      nav
+        a(href='games') Games
+        a(href='index') Home
+        a(href='events') Events
+  if page == 'games'
+    header
+      img(src='images/logo.png')
+      nav
+        a(href='about') About
+        a(href='index') Home
+        a(href='events') Events
+  if page == 'events'
+    header
+      img(src='images/logo.png')
+      nav
+        a(href='about') About
+        a(href='index') Home
+        a(href='games') Games
