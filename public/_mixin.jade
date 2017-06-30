@@ -1,29 +1,29 @@
 mixin header(page)
-  if page == 'index'
-    header
-      img(src='images/logo.png')
-      nav
+  header
+    img(src='images/logo.png')
+    nav
+      if page == 'index'
+        a(href='events') Events
+        a(href='socials') Socials
         a(href='games') Games
         a(href='about') About
+      if page == 'about'
         a(href='events') Events
-  if page == 'about'
-    header
-      img(src='images/logo.png')
-      nav
+        a(href='socials') Socials
         a(href='games') Games
         a(href='index') Home
+      if page == 'games'
         a(href='events') Events
-  if page == 'games'
-    header
-      img(src='images/logo.png')
-      nav
-        a(href='about') About
+        a(href='socials') Socials
         a(href='index') Home
-        a(href='events') Events
-  if page == 'events'
-    header
-      img(src='images/logo.png')
-      nav
         a(href='about') About
-        a(href='index') Home
+      if page == 'events'
+        a(href='socials') Socials
         a(href='games') Games
+        a(href='index') Home
+        a(href='about') About
+      if page == 'socials'
+        a(href='socials') Events
+        a(href='games') Games
+        a(href='index') Home
+        a(href='about') About
