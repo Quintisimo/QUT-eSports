@@ -1,6 +1,7 @@
-mixin header(page)
+mixin computer-header(page)
   header
     img(src='images/logo.png')
+    h1#mobile-header-toggle ☰
     nav
       if page == 'index'
         a(href='events') Events
@@ -23,7 +24,35 @@ mixin header(page)
         a(href='index') Home
         a(href='about') About
       if page == 'socials'
-        a(href='socials') Events
+        a(href='events') Events
         a(href='games') Games
         a(href='index') Home
         a(href='about') About
+
+mixin mobile-header(page)
+  #mobile-header
+    if page == 'index'
+      a(href='events') Events
+      a(href='socials') Socials
+      a(href='games') Games
+      a(href='about') About
+    if page == 'about'
+      a(href='events') Events
+      a(href='socials') Socials
+      a(href='games') Games
+      a(href='index') Home
+    if page == 'games'
+      a(href='events') Events
+      a(href='socials') Socials
+      a(href='index') Home
+      a(href='about') About
+    if page == 'events'
+      a(href='socials') Socials
+      a(href='games') Games
+      a(href='index') Home
+      a(href='about') About
+    if page == 'socials'
+      a(href='events') Events
+      a(href='games') Games
+      a(href='index') Home
+      a(href='about') About
