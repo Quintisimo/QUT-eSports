@@ -14,14 +14,13 @@ $(document).ready(function() {
         $this.text('✕').fadeIn(500);
       });
     }
-    $('#mobile-header').slideToggle(function() {
-    });
+    $('#mobile-header').slideToggle('slow');
   });
 
   $('#calendar').fullCalendar({
     header: {
-      left: '',
-      center: 'title',
+      left: 'title',
+      center: '',
       right: 'today prev,next'
     },
     googleCalendarApiKey: 'API_KEY',

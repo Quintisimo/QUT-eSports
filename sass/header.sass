@@ -1,20 +1,17 @@
 header
+  position: fixed
   display: flex
   align-items: center
   justify-content: space-between
-  height: 120px
+  height: 8rem
   width: 100%
+  background: $header
+  z-index: 2
 
   img
-    height: 150px
-    width: 150px
+    height: 10rem
+    width: 10rem
     margin-left: 20px
-
-  @media (max-width: 1000px)
-    img
-      height: 200px
-      width: 200px
-      margin-top: 30px
 
   nav
     margin-right: 20px
@@ -25,39 +22,39 @@ header
       text-decoration: none
       margin-left: 20px
       padding: 10px 30px
-      background: $header
-      border: 3px solid $qut-blue
+      background: $qut-orange
+      border: 3px solid darken($qut-orange, 10%)
       border-radius: 20px
       cursor: pointer
 
       &:hover
-        background: $qut-blue
+        background: $header
 
-  @media (max-width: 1000px)
+  @media (max-width: 800px)
     nav
       display: none
 
 #mobile-header-toggle
   display: none
   margin-right: 20px
-  font-size: 80px
+  font-size: 3rem
 
-@media (max-width: 1000px)
+@media (max-width: 800px)
   #mobile-header-toggle
     display: block
 
 #mobile-header
   display: none
   position: fixed
+  margin-top: 8rem
   width: 100%
   background: $header
-  margin-top: 20px
   z-index: 2
 
   a
     display: block
-    font-size: 40px
-    padding: 30px 0
+    font-size: 20px
+    padding: 10px 0
     border-bottom: solid 2px white
     color: inherit
     text:
