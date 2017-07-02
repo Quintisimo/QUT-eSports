@@ -16,20 +16,4 @@ $(document).ready(function() {
     }
     $('#mobile-header').slideToggle('slow');
   });
-
-  $('#calendar').fullCalendar({
-    header: {
-      left: 'title',
-      center: '',
-      right: 'today prev,next'
-    },
-    googleCalendarApiKey: 'API_KEY',
-    events: {
-        googleCalendarId: 'CALENDAR_ID'
-    },
-    eventClick: function(event) {
-      window.open(event.url, 'gcalevent', 'width=700,height=600');
-      return false;
-    }
-  });
 });
