@@ -18,6 +18,7 @@ gulp.task('watch', function () {
   gulp.watch("sass/*.sass", browserSync.reload);
   gulp.watch("public/css/*.sass", browserSync.reload);
   gulp.watch("public/js/*.js", browserSync.reload);
+  gulp.watch("*.json", browserSync.reload);
 });
 
 gulp.task('default', ['serve', 'watch']);

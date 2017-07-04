@@ -15,8 +15,8 @@ function initMap() {
 
 (function($) {
   $(document).ready(function() {
-    $('.game').click(function() {
-      $(this).children('.game-details').slideToggle();
+    $('.game').children('img').click(function() {
+      $(this).siblings('.game-details').slideToggle();
     });
 
     $('#mobile-header-toggle').click(function() {
