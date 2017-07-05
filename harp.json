@@ -1,7 +1,7 @@
 {
   "globals": {
     "title": "QUT eSPORTS",
-    "lead": "eSPORTS FOR THE REAL WORLD",
+    "lead": "Your pathway to eSports",
     "about": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To",
 
     "staff": {
@@ -57,7 +57,7 @@
       },
 
       "Dota 2": {
-        "image": "../images/games/dota2.jpg",
+        "image": "../images/games/dota 2.jpg",
         "about": "Defence of the Ancients 2 or Dota 2 is a free to play multiplayer online battle arena which incorporates real-time strategy. There are over 100 playable characters known as 'heroes' which the player chooses at the beginning of the match. It is a widely popular video game, with a widespread competitive scene with prize pools totalling millions of US dollars.",
         "strategy": "Each game of Dota 2 has 2 teams with 5 people on each team. There are two main classes which are carries and supports. The carries are the main damage dealers while the supports are more useful for their functionality and utility. Neutral monsters are able to be slain for additional buffs, such as Roshan. Killing Roshan grants the team that killed it increased health and health regeneration as well as bonus gold. The main objective of every DotA2 match is to destroy the enemy team's 'Ancient', which is found in the base of each team and is defended by two turrets.",
         "team": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
