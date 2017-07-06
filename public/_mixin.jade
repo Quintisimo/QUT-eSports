@@ -5,6 +5,7 @@ mixin computer-header(page)
     h1#mobile-header-toggle ☰
     nav
       if page == 'index'
+        a(href='index')#isactive Home
         a(href='events') Events
         a(href='socials') Socials
         a(href='games') Games
@@ -14,46 +15,30 @@ mixin computer-header(page)
         a(href='events') Events
         a(href='socials') Socials
         a(href='games') Games
+        a(href='about')#isactive About
       if page == 'games'
         a(href='index') Home
         a(href='events') Events
         a(href='socials') Socials
+        a(href='games')#isactive Games
         a(href='about') About
       if page == 'events'
         a(href='index') Home
+        a(href='events')#isactive Events
         a(href='socials') Socials
         a(href='games') Games
         a(href='about') About
       if page == 'socials'
         a(href='index') Home
         a(href='events') Events
+        a(href='socials')#isactive Socials
         a(href='games') Games
         a(href='about') About
 
 mixin mobile-header(page)
   #mobile-header
-    if page == 'index'
-      a(href='events') Events
-      a(href='socials') Socials
-      a(href='games') Games
-      a(href='about') About
-    if page == 'about'
-      a(href='index') Home
-      a(href='events') Events
-      a(href='socials') Socials
-      a(href='games') Games
-    if page == 'games'
-      a(href='index') Home
-      a(href='events') Events
-      a(href='socials') Socials
-      a(href='about') About
-    if page == 'events'
-      a(href='index') Home
-      a(href='socials') Socials
-      a(href='games') Games
-      a(href='about') About
-    if page == 'socials'
-      a(href='index') Home
-      a(href='events') Events
-      a(href='games') Games
-      a(href='about') About
+    a(href='index') Home
+    a(href='events') Events
+    a(href='socials') Socials
+    a(href='games') Games
+    a(href='about') About

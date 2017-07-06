@@ -1,3 +1,4 @@
+@import sass/font.sass
 @import sass/vars
 @import sass/header
 @import sass/index
@@ -6,16 +7,20 @@
 @import sass/events
 @import sass/socials
 
-html, body, h1, h2, p
+html, body, h1, h2
   padding: 0
   margin: 0
   color: white
-  font-family: sans-serif
+  font-family: 'nevisbold'
+
+p
+  font-family: 'uvf_bourgeois_med'
+
 
 html
   height: 100%
   overflow: hidden
-  background: url(../images/cover.png) no-repeat center center fixed
+  background: url(../images/cover-4.png) no-repeat center center fixed
     size: cover
 
 body
@@ -33,6 +38,6 @@ body
       margin-bottom: 1rem
       text-align: center
 
-@media (max-width: 800px)
+@media (max-width: 900px)
   html
     font-size: 10px
