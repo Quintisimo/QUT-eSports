@@ -5,13 +5,24 @@
     justify-content: space-around
     align-items: center
     align-content: center
+    padding-top: 30px
 
-    iframe
+    iframe, .fb-page
       height: 500px
       width: 500px
-      margin: 30px 0
 
-    @media (max-width: 900px)
-      iframe
+    .fb-page
+      display: block
+
+  @media (max-width: 1000px)
+    #social-widgets
+      iframe, .fb-page
         height: 400px
         width: 400px
+        margin: 30px auto
+
+  @media (max-width: 400px)
+    #social-widgets
+      iframe, .fb-page
+        height: 300px
+        width: 300px
