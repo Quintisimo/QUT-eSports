@@ -1,16 +1,29 @@
 function initMap() {
   var location = {
-    lat: -27.477356,
-    lng: 153.028423
+    lat: -27.477327,
+    lng: 153.030078
   };
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
+    zoom: 17,
     center: location
   });
+
+  var contentString = '<h1>X Block Gardens Point</h1><img src="../images/map/x block.jpg">';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
   var marker = new google.maps.Marker({
     position: location,
-    map: map
+    map: map,
+    icon: '../images/map/marker.png'
   });
+
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
 }
 
 (function($) {

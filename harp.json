@@ -84,6 +84,21 @@
           "Eill": "http://www.fillmurray.com/200/200",
           "Sill": "http://www.fillmurray.com/200/200"
         }
+      },
+
+      "Rocket League": {
+        "image": "../images/games/rocket league.jpg",
+        "about": "",
+        "strategy": "",
+        "team": "",
+        "members": {
+          "Bill": "http://www.fillmurray.com/200/200",
+          "Till": "http://www.fillmurray.com/200/200",
+          "Cill": "http://www.fillmurray.com/200/200",
+          "Dill": "http://www.fillmurray.com/200/200",
+          "Eill": "http://www.fillmurray.com/200/200",
+          "Sill": "http://www.fillmurray.com/200/200"
+        }
       }
     }
   }
