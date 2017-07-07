@@ -13,7 +13,8 @@ function initMap() {
   };
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 17,
-    center: location
+    center: location,
+    scrollwheel: false
   });
 
   var contentString = '<h1>X Block Gardens Point</h1><img src="../images/map/x block.jpg">';
@@ -37,11 +38,13 @@ function initMap() {
 (function($) {
   $(document).ready(function() {
     $('.game').children('img').click(function() {
-      $(this).siblings('.game-details').slideToggle();
+      var $this = $(this);
+      $this.siblings('.game-details').slideToggle();
     });
 
     $('#mobile-header-toggle').click(function() {
-      $this = $(this);
+      var $this = $(this);
+
       if ($('#mobile-header').is(':visible')) {
         $this.fadeOut(500, function() {
           $this.text('☰').fadeIn(500);
