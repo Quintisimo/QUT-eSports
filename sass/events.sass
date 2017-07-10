@@ -2,21 +2,22 @@
   height: auto
 
   #calendar
+    font-family: 'uvf_bourgeois_med'
     width: calc(100% - 60px)
     margin: 20px 30px
-    font-size: 1rem
+    font-size: 1.2rem
 
     .fc-other-month
       opacity: 0.8
 
     .fc-day
-      background: darken($calendar, 30%)
+      background: lighten($button, 5%)
 
       &.fc-today
-        background: darken($calendar, 50%)
+        background: darken($button, 5%)
 
     .fc-widget-header
-      background: $button
+      background: darken($button, 5%)
 
     .fc-button
       background: $button
@@ -26,24 +27,26 @@
 
   #mc_embed_signup
     display: flex
-    align-items: center
     justify-content: center
     padding: 20px 0
 
+    label, .email
+      font-family: 'uvf_bourgeois_med'
+      font-size: 1.5rem
+
     .email, .email:hover, .email:focus
       display: block
-      margin: 15px 0
+      margin: 15px 5px
       padding: 10px
       width: 280px
       outline: none
       border: none
       background: $input
       color: inherit
-      font-family: inherit
-      font-size: 1rem
+      font-size: 1.2rem
 
     .button
-      background: $button
+      background: darken($button, 5%)
       outline: none
       border: none
       border-radius: 10px
