@@ -37,8 +37,14 @@ function initMap() {
 
 (function($) {
   $(document).ready(function() {
+
     $('.game').children('img').click(function() {
-      var $this = $(this);
+      var $this = $(this),
+      headerHeight = $('html').css('font-size');
+      headerHeight = headerHeight.replace('px', '') * 8.5;
+      $('html, body').animate({
+        scrollTop: $this.offset().top - headerHeight
+      });
       $this.siblings('.game-details').slideToggle();
     });
 

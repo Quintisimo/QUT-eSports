@@ -7,38 +7,38 @@ mixin computer-header(page)
       if page == 'index'
         a(href='index')#isactive Home
         a(href='events') Events
-        a(href='socials') Socials
         a(href='games') Games
+        a(href='socials') Socials
         a(href='about') About
       if page == 'about'
         a(href='index') Home
         a(href='events') Events
-        a(href='socials') Socials
         a(href='games') Games
+        a(href='socials') Socials
         a(href='about')#isactive About
       if page == 'games'
         a(href='index') Home
         a(href='events') Events
-        a(href='socials') Socials
         a(href='games')#isactive Games
+        a(href='socials') Socials
         a(href='about') About
       if page == 'events'
         a(href='index') Home
         a(href='events')#isactive Events
-        a(href='socials') Socials
         a(href='games') Games
+        a(href='socials') Socials
         a(href='about') About
       if page == 'socials'
         a(href='index') Home
         a(href='events') Events
-        a(href='socials')#isactive Socials
         a(href='games') Games
+        a(href='socials')#isactive Socials
         a(href='about') About
 
 mixin mobile-header(page)
   #mobile-header
     a(href='index') Home
     a(href='events') Events
-    a(href='socials') Socials
     a(href='games') Games
+    a(href='socials') Socials
     a(href='about') About
