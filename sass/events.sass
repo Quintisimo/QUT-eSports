@@ -4,6 +4,25 @@
   #calendar
     width: calc(100% - 60px)
     margin: 20px 30px
+    font-size: 1rem
+
+    .fc-other-month
+      opacity: 0.8
+
+    .fc-day
+      background: darken($calendar, 30%)
+
+      &.fc-today
+        background: darken($calendar, 50%)
+
+    .fc-widget-header
+      background: $button
+
+    .fc-button
+      background: $button
+      outline: none
+      border: none
+      color: inherit
 
   #mc_embed_signup
     display: flex

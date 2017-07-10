@@ -11,10 +11,10 @@ section#games
         h2 About the game...
         p #{ game.about }
         p #{ game.strategy }
-        h2 Our Team
+        h2 Management Team
         .team-faces
           each member, index in game.members
             .person
               img(src='#{ member }')
               p #{ index }
-        p #{ game.team }
+        p #{ game.goals }

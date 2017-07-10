@@ -38,6 +38,22 @@ function initMap() {
 (function($) {
   $(document).ready(function() {
 
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'title',
+        center: '',
+        right: 'today prev,next,'
+      },
+      googleCalendarApiKey: 'AIzaSyDvSDhNmwU_AjpcV5zubFV5WqbqKxsGB2M',
+      events: {
+        googleCalendarId: 'i600e456v1jf87o3r5qqr9dgq8@group.calendar.google.com'
+      },
+     eventClick: function(event) {
+       window.open(event.url, 'gcalevent', 'width=700,height=600');
+       return false;
+      }
+    });
+
     $('.game').children('img').click(function() {
       var $this = $(this),
       headerHeight = $('html').css('font-size');
