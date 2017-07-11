@@ -56,10 +56,12 @@ function initMap() {
 
     $('.signup').click(function() {
       $('.register').addClass('is-active');
+      $('#overlay').css('display', 'block');
     });
 
     $('.close').click(function() {
       $('.register').removeClass('is-active');
+      $('#overlay').css('display', 'none');
     });
 
     $('.game').children('img').click(function() {

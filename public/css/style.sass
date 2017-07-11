@@ -56,20 +56,31 @@ body
     background: url(../images/cover-4.png) no-repeat center center fixed
       size: cover
 
+  #overlay
+    position: fixed
+    display: none
+    height: 110%
+    width: 100%
+    overflow: hidden
+    z-index: 150
+    background: $shadow
+
+
   .register
     position: fixed
     display: flex
     flex-wrap: wrap
     justify-content: center
     align-items: center
-    top: calc(50% - 200px)
-    left: calc(50% - 250px)
+    align-content: center
+    top: calc(50% - 16rem)
+    left: calc(50% - 16rem)
     height: auto
-    width: 500px
+    width: 32rem
     background: rgba($light-blue, 0.8)
     padding: 20px 0
     border-radius: 20px
-    transform: translateY(-800px)
+    transform: translateY(-1000px)
     transition: all 0.5s ease-in-out
     z-index: 200
 
