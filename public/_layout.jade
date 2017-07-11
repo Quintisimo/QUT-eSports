@@ -14,5 +14,25 @@ html
     script(src='js/script.js' type='text/javascript')
     meta(name='viewport', content='width = device-width, initial-scale = 1')
   body
+    include _mixin
     #background
+    form.register(action)
+      p.close ✕
+      label Name:
+        input.email(type='text', name='Name', required)
+      label Student Number:
+        input.email(type='number', name='Student Number', required)
+      label Email:
+        input.email(type='email', name='Email', required)
+      label Date of Birth:
+        input.email(type='text', name='Date of Birth', pattern='/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/', title='Please enter DD-MM-YYY', required)
+    
+      .form
+        +games('Overwatch')
+        +games('Counter Strike: Global Offensive')
+        +games('League of Legends')
+        +games('Dota 2')
+        +games('HearthStone')
+        +games('Rocket League')
+      input.button(type='submit')
     !=yield
