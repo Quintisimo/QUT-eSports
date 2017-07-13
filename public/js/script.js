@@ -76,7 +76,7 @@ function initMap() {
       $this.siblings('.game-details').slideToggle();
     });
 
-    $('#mobile-header-toggle').click(function() {
+    $('#mobile-header-toggle').click(function(e) {
       var $this = $(this);
 
       if ($('#mobile-header').is(':visible')) {
@@ -89,6 +89,14 @@ function initMap() {
         });
       }
       $('#mobile-header').slideToggle('slow');
+      e.stopPropagation();
+    });
+
+    $(document).click(function() {
+      $('#mobile-header').slideUp();
+      $('#mobile-header-toggle').fadeOut(500, function() {
+        $('#mobile-header-toggle').text('☰').fadeIn(500);
+      });
     });
 
     $("form.register").submit(function(event){

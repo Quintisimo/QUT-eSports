@@ -65,7 +65,6 @@ body
     z-index: 150
     background: $shadow
 
-
   .register
     position: fixed
     display: flex
@@ -100,7 +99,8 @@ body
     .form-game
       display: inline-block
       width: 40%
-      padding: 10px 0 0 40px
+      text-align: center
+      padding: 20px 0 0 20px
 
     input
       margin: 5px 0
@@ -114,6 +114,10 @@ body
     input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
       -webkit-appearance: none
       margin: 0
+
+  @media (max-width: 900px)
+    .register
+      top: 20px
 
   section
     position: absolute
