@@ -93,10 +93,12 @@ function initMap() {
     });
 
     $(document).click(function() {
-      $('#mobile-header').slideUp();
-      $('#mobile-header-toggle').fadeOut(500, function() {
-        $('#mobile-header-toggle').text('☰').fadeIn(500);
-      });
+      if ($('#mobile-header').is(':visible')) {
+        $('#mobile-header').slideUp();
+        $('#mobile-header-toggle').fadeOut(500, function() {
+          $('#mobile-header-toggle').text('☰').fadeIn(500);
+        });
+      }
     });
 
     $("form.register").submit(function(event){
