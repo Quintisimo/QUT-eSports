@@ -68,6 +68,7 @@ function initMap() {
       var $this = $(this),
       headerHeight = $('html').css('font-size');
       headerHeight = headerHeight.replace('px', '') * 8.5;
+      
       if (!$('.game-details').is(':visible')) {
         $('html, body').animate({
           scrollTop: $this.offset().top - headerHeight
@@ -117,9 +118,7 @@ function initMap() {
             dataType: 'jsonp',
             data: serializedData
         });
-
         $('form.register').reset();
-
         // request.done(function (response, textStatus, jqXHR){
         //     console.log("Hooray, it worked!");
         //     console.log(response);
