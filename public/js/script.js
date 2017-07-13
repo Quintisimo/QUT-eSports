@@ -46,7 +46,7 @@ function initMap() {
       },
       googleCalendarApiKey: 'AIzaSyDvSDhNmwU_AjpcV5zubFV5WqbqKxsGB2M',
       events: {
-        googleCalendarId: 'i600e456v1jf87o3r5qqr9dgq8@group.calendar.google.com'
+        googleCalendarId: 'qutesport@gmail.com'
       },
      eventClick: function(event) {
        window.open(event.url, 'gcalevent', 'width=700,height=600');
@@ -68,7 +68,7 @@ function initMap() {
       var $this = $(this),
       headerHeight = $('html').css('font-size');
       headerHeight = headerHeight.replace('px', '') * 8.5;
-      
+
       if (!$('.game-details').is(':visible')) {
         $('html, body').animate({
           scrollTop: $this.offset().top - headerHeight
