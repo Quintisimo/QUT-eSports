@@ -136,5 +136,5 @@ function initMap() {
         // });
         event.preventDefault();
       });
-    });
+  });
 }(jQuery));

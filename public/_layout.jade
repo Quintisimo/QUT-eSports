@@ -14,7 +14,6 @@ html
     link(href='images/title.png' rel='icon' type='image/x-icon')
     link(href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css' rel='stylesheet' type='text/css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js' type='text/javascript')
@@ -34,7 +33,7 @@ html
       label Email:
         input.email(type='email', name='Email', required)
       label Date of Birth:
-        input.email(type='text', name='Date of Birth', pattern='/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/', title='Please enter DD-MM-YYY', required)
+        input.email(type='text', pattern='(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}', name='Date of Birth', placeholder='DD/MM/YYYY', required)
       .form
         +games('Overwatch')
         +games('Counter Strike: Global Offensive')
