@@ -118,21 +118,21 @@ function initMap() {
             dataType: 'jsonp',
             data: serializedData
         });
-        $('form.register').reset();
-        // request.done(function (response, textStatus, jqXHR){
-        //     console.log("Hooray, it worked!");
-        //     console.log(response);
-        //     console.log(textStatus);
-        //     console.log(jqXHR);
-        // });
+        request.done(function (response, textStatus, jqXHR){
+          $('form.register').reset();
+          // console.log("Hooray, it worked!");
+          // console.log(response);
+          // console.log(textStatus);
+          // console.log(jqXHR);
+        });
         // request.fail(function (jqXHR, textStatus, errorThrown){
-        //     console.error(
-        //         "The following error occurred: "+
-        //         textStatus, errorThrown
-        //     );
+        //   console.error(
+        //     "The following error occurred: "+
+        //     textStatus, errorThrown
+        //   );
         // });
         // request.always(function () {
-        //     $inputs.prop("disabled", false);
+        //   $inputs.prop("disabled", false);
         // });
         event.preventDefault();
       });
