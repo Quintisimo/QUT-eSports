@@ -1,0 +1,29 @@
+"Counter Strike: Global Offensive": {
+  "image": "../images/games/csgo/csgo.jpg",
+  "about": "Counter Strike: Global Offensive is a team based first-person shooter game created by Valve and run through Steam. It has a high skill cap and is a require great mechanical skill.",
+  "strategy": "Each team has 5 players, with one team being 'Terrorist' and the other being 'Counter-Terrorist'. The objective of the Terrorist team is to plant a bomb at one of the two bomb sites, more commonly referred to as A or B. The Counter-Terrorist team must prevent the Terrorist team from planting the bomb, and if the bomb is planted then the Counter-Terrorist team must defuse the bomb before the time in the round runs out. Each team can choose a variety of guns at the start of each round, as well as being able to buy supplementary items such as flashbang grenades and explosive grenades. Counter-Terrorists are able to buy bomb defusal kits with in game currency earned during the game to reduce the amount of time taken to defuse a bomb. In a competitive match, the victorious team is the team which wins 16 rounds first, with each round being relatively short.",
+  "goals": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "members": {
+    "Bill": "http://www.fillmurray.com/200/200",
+    "Till": "http://www.fillmurray.com/200/200",
+    "Cill": "http://www.fillmurray.com/200/200",
+    "Dill": "http://www.fillmurray.com/200/200",
+    "Eill": "http://www.fillmurray.com/200/200",
+    "Sill": "http://www.fillmurray.com/200/200"
+  }
+},
+
+"HearthStone": {
+  "image": "../images/games/hearthstone/hearthstone.jpg",
+  "about": "Hearthstone is a free-to-play strategy card game from Blizzard Entertainment. Although the characters in Hearthstone are from Warcraft (also a game by Blizzard Entertainment), it is completely beginner friendly with tutorials and explanations for each card and character.",
+  "strategy": "Each game of Hearthstone uses a deck of cards that the player has constructed using cards that they receive in-game. Each card has attack and defence points, which are used to either attack or defend the hit points of the player. Different cards have different uses, such as spell cards and 'Secret' cards which are hidden effects that are triggered when specific events occurs. Additionally, each card has a tooltip which explains what the card does and what effect it has.",
+  "goals": "A group for Hearthstone fans and game discussion! This group's purpose is to connect and expand on the our Hearthstone community. Here we answer questions in how to get better at the game, improve on Arena drafting/playing skills and we host fortnightly events which may include mini-competitions, live lets-plays or just casual gatherings where we can all just play and chat.",
+  "members": {
+    "Bill": "http://www.fillmurray.com/200/200",
+    "Till": "http://www.fillmurray.com/200/200",
+    "Cill": "http://www.fillmurray.com/200/200",
+    "Dill": "http://www.fillmurray.com/200/200",
+    "Eill": "http://www.fillmurray.com/200/200",
+    "Sill": "http://www.fillmurray.com/200/200"
+  }
+},
