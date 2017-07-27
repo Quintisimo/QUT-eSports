@@ -1,0 +1,27 @@
+{
+  "name": "QUT-eSports",
+  "version": "1.0.0",
+  "description": "A website for QUT eSports Club",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quintisimo/QUT-eSports.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quintisimo/QUT-eSports/issues"
+  },
+  "homepage": "https://qutesports.com",
+  "dependencies": {
+    "harp": "^0.24.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}
