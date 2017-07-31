@@ -2,7 +2,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=263835507426067";
+  js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=263835507426067';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
@@ -11,7 +11,7 @@ function initMap() {
     lat: -27.477327,
     lng: 153.030078
   };
-  var map = new google.maps.Map(document.getElementById("map"), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
     center: location,
     scrollwheel: false
@@ -102,38 +102,37 @@ function initMap() {
       }
     });
 
-    $("form.register").submit(function(event){
+    $('form.register').submit(function(event){
       var request;
-
         if (request) {
             request.abort();
         }
         var $form = $(this);
-        var $inputs = $form.find("input, select, button, textarea");
+        var $inputs = $form.find('input, select, button, textarea');
         var serializedData = $form.serialize();
-        $inputs.prop("disabled", true);
+        $inputs.prop('disabled', true);
         request = $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz4zbw4d6ZrH0vP12WcjlT0-n_PLOMd0h3IEDb6DH4UdD1e8d5X/exec",
-            type: "post",
+            url: 'https://script.google.com/macros/s/AKfycbz4zbw4d6ZrH0vP12WcjlT0-n_PLOMd0h3IEDb6DH4UdD1e8d5X/exec',
+            type: 'post',
             dataType: 'jsonp',
             data: serializedData
         });
-        request.done(function (response, textStatus, jqXHR){
-          $('form.register').reset();
-          // console.log("Hooray, it worked!");
+        // request.done(function (response, textStatus, jqXHR){
+          // console.log('Hooray, it worked!');
           // console.log(response);
           // console.log(textStatus);
           // console.log(jqXHR);
-        });
+        // });
         // request.fail(function (jqXHR, textStatus, errorThrown){
         //   console.error(
-        //     "The following error occurred: "+
+        //     'The following error occurred: '+
         //     textStatus, errorThrown
         //   );
         // });
-        // request.always(function () {
-        //   $inputs.prop("disabled", false);
-        // });
+        request.always(function () {
+          // $inputs.prop('disabled', false);
+          window.location.reload();
+        });
         event.preventDefault();
       });
   });
