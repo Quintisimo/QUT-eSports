@@ -1,8 +1,7 @@
-include _mixin
+include _mixins
 +computer-header('games')
-+mobile-header()
 section#games
-  h1 Our Games 
+  h1.heading Our Games 
   p (Click the banner to learn more)
   each game, index in games
     .game
@@ -11,10 +10,10 @@ section#games
         h2 About the game...
         p #{ game.about }
         p #{ game.strategy }
-        //h2 Management Team
-        //.team-faces
-          //each member, index in game.members
-            //.person
-              //img(src='#{ member }')
-              //p #{ index }
-        //p #{ game.goals }
+        //- h2 Management Team
+        //- .team-faces
+        //-   each member, index in game.members
+        //-     .person
+        //-       img(src='#{ member }')
+        //-       p #{ index }
+        //- p #{ game.goals }

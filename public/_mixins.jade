@@ -5,7 +5,7 @@ mixin computer-header(page)
     h1#mobile-header-toggle ☰
     nav
       if page == 'index'
-        a(href='index')#isactive Home
+        a(href='index')#is-active Home
         a(href='events') Events
         a(href='games') Games
         a(href='socials') Socials
@@ -16,18 +16,18 @@ mixin computer-header(page)
         a(href='events') Events
         a(href='games') Games
         a(href='socials') Socials
-        a(href='about')#isactive About
+        a(href='about')#is-active About
         span.signup Signup
       if page == 'games'
         a(href='index') Home
         a(href='events') Events
-        a(href='games')#isactive Games
+        a(href='games')#is-active Games
         a(href='socials') Socials
         a(href='about') About
         span.signup Signup
       if page == 'events'
         a(href='index') Home
-        a(href='events')#isactive Events
+        a(href='events')#is-active Events
         a(href='games') Games
         a(href='socials') Socials
         a(href='about') About
@@ -36,18 +36,9 @@ mixin computer-header(page)
         a(href='index') Home
         a(href='events') Events
         a(href='games') Games
-        a(href='socials')#isactive Socials
+        a(href='socials')#is-active Socials
         a(href='about') About
         span.signup Signup
-
-mixin mobile-header()
-  #mobile-header
-    a(href='index') Home
-    a(href='events') Events
-    a(href='games') Games
-    a(href='socials') Socials
-    a(href='about') About
-    span.signup Signup
 
 mixin games(game)
   .form-game

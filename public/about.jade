@@ -1,8 +1,7 @@
-include _mixin
+include _mixins
 +computer-header('about')
-+mobile-header()
 section#about
-  h1 About Us
+  h1.heading About Us
   #staff
     each person, index in staff
       .person
@@ -10,7 +9,7 @@ section#about
         span #{ index }
         
   p #{ about }
-  h1 Contact Us
+  h1.heading Contact Us
   #contact
     #map
     p X224, X Block, QUT Gardens Point Campus, Brisbane, Queensland, Australia 4000
