@@ -55,6 +55,21 @@
         }
       },
 
+      "HearthStone": {
+        "image": "../images/games/hearthstone/hearthstone.jpg",
+        "about": "Sheathe your sword, draw your deck, and get ready for Hearthstone - the fast-paced strategy card game that's easy to learn and massively fun. Start a free game and play your cards to sling spells, summon creatures, and command the heroes of Warcraft in duels of epic strategy.With an assortment of pre-built starter decks and hundreds of additional cards to win, craft, or purchase, your collection never stops evolving. Play your way: Find your perfect match in casual, ranked, and arena games, participate in crazy Tavern Brawls, or practice against devious AI opponents and hone your skills in Hearthstone’s adventure mode.",
+        "strategy": "Each game of Hearthstone uses a deck of cards that the player has constructed using cards that they receive in-game. Each card has attack and defence points, which are used to either attack or defend the hit points of the player. Different cards have different uses, such as spell cards and 'Secret' cards which are hidden effects that are triggered when specific events occurs. Additionally, each card has a tooltip which explains what the card does and what effect it has.",
+        "goals": "A group for Hearthstone fans and game discussion! This group's purpose is to connect and expand on the our Hearthstone community. Here we answer questions in how to get better at the game, improve on Arena drafting/playing skills and we host fortnightly events which may include mini-competitions, live lets-plays or just casual gatherings where we can all just play and chat.",
+        "members": {
+          "Bill": "http://www.fillmurray.com/200/200",
+          "Till": "http://www.fillmurray.com/200/200",
+          "Cill": "http://www.fillmurray.com/200/200",
+          "Dill": "http://www.fillmurray.com/200/200",
+          "Eill": "http://www.fillmurray.com/200/200",
+          "Sill": "http://www.fillmurray.com/200/200"
+        }
+      },
+
       "Rocket League": {
         "image": "../images/games/rocket league/rocket league.jpg",
         "about": "Rocket League is a team based game in which players use rocket-powered cars to play soccer. Each team consists of one to four players with the ultimate objective of scoring more goals than the opposing team. Due to it’s popularity and competitive nature, Rocket League has been adopted as an eSport, in which professional players participating through ESL and Major League Gaming matches, along with Psyonix's own Rocket League Championship Series (RLCS).",
