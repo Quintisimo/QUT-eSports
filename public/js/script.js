@@ -1,3 +1,4 @@
+// Facebook widget
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -6,6 +7,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+// Google maps
 function initMap() {
   if (document.getElementById('map')) {
     var location = {
@@ -17,28 +19,27 @@ function initMap() {
       center: location,
       scrollwheel: false
     });
-
     var contentString = '<h1>X Block Gardens Point</h1><img src="../images/map/x block.jpg">';
-
     var infowindow = new google.maps.InfoWindow({
       content: contentString
     });
-
     var marker = new google.maps.Marker({
       position: location,
       map: map,
       icon: '../images/map/marker.png'
     });
-
     marker.addListener('click', function() {
       infowindow.open(map, marker);
     });
   }
 }
 
+// jQuery
 (function($) {
+
   $(document).ready(function() {
 
+    // Events calendar
     $('#calendar').fullCalendar({
       header: {
         left: 'title',
@@ -55,16 +56,19 @@ function initMap() {
       }
     });
 
+    // Signup toggle
     $('.signup').click(function() {
       $('.register').addClass('is-active');
       $('#overlay').css('display', 'block');
     });
 
+    // Dismiss signup
     $('.close').click(function() {
       $('.register').removeClass('is-active');
       $('#overlay').css('display', 'none');
     });
 
+    // Toggle game info
     $('.game').children('img').click(function() {
       var $this = $(this),
       headerHeight = $('html').css('font-size');
@@ -78,6 +82,7 @@ function initMap() {
       $this.siblings('.game-details').slideToggle();
     });
 
+    // Animate mobile header button
     $('#mobile-header-toggle').click(function(e) {
       var $this = $(this);
 
@@ -94,6 +99,7 @@ function initMap() {
       e.stopPropagation();
     });
 
+    // Dismiss mobile header when clicked outside
     $(document).click(function() {
       if ($('#mobile-header').is(':visible')) {
         $('#mobile-header').slideUp();
@@ -103,6 +109,7 @@ function initMap() {
       }
     });
 
+    //Ajax form submission to google sheets
     $('form.register').submit(function(event){
       var request;
         if (request) {
@@ -118,20 +125,8 @@ function initMap() {
             dataType: 'jsonp',
             data: serializedData
         });
-        // request.done(function (response, textStatus, jqXHR){
-          // console.log('Hooray, it worked!');
-          // console.log(response);
-          // console.log(textStatus);
-          // console.log(jqXHR);
-        // });
-        // request.fail(function (jqXHR, textStatus, errorThrown){
-        //   console.error(
-        //     'The following error occurred: '+
-        //     textStatus, errorThrown
-        //   );
-        // });
         request.always(function () {
-          // $inputs.prop('disabled', false);
+          $inputs.prop('disabled', false);
           window.location.reload();
         });
         event.preventDefault();

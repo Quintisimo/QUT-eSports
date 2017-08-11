@@ -1,4 +1,6 @@
+// Layout of every page of the website
 include _mixins
+
 doctype
 html
   head
@@ -14,6 +16,8 @@ html
     script(src='js/script.js' type='text/javascript')
     meta(name='viewport', content='width = device-width, initial-scale = 1')
   body
+  
+    // Website header navigation for mobile
     #mobile-header
       a(href='index') Home
       a(href='events') Events
@@ -22,6 +26,8 @@ html
       a(href='about') About
       span.signup Signup
     #background
+    
+    //Signup form
     #overlay
     form.register
       span.close ✕

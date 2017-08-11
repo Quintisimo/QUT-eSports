@@ -1,14 +1,18 @@
 include _mixins
 +computer-header('about')
+
 section#about
   h1.heading About Us
   #staff
+  
+    // Looping through staff members in harp.json
     each person, index in staff
       .person
         img(src='#{ person }')
         span #{ index }
         
   p #{ about }
+  
   h1.heading Contact Us
   #contact
     #map

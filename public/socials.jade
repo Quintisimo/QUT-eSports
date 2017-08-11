@@ -1,9 +1,13 @@
 include _mixins
 +computer-header('socials')
+
 section#socials
   h1.heading Our Communites
   #fb-root
   #social-widgets
+    // Discord widget
     iframe(src='https://discordapp.com/widget?id=283925065613967360&theme=dark' allowtransparency='true' frameborder='0')
+    
+    // Facebook widget
     .fb-page(data-href='https://www.facebook.com/QUTeSports/', data-tabs='timeline',data-width='500', data-height='500', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
       blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/QUTeSports/')
