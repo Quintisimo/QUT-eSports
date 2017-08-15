@@ -11,7 +11,7 @@
 ) document, 'script', 'facebook-jssdk'
 
 # Google maps
-initMap = () ->
+initMap = ->
   if document.getElementById('map')
     location =
       lat: -27.477327,
@@ -42,7 +42,7 @@ initMap = () ->
   $(document).ready ->
 
     # Events calendar
-    $('#calendar').fullCalendar({
+    $('#calendar').fullCalendar(
       header:
         left: 'title',
         center: '',
@@ -55,7 +55,7 @@ initMap = () ->
      eventClick: (event) ->
        window.open(event.url, 'gcalevent', 'width=700,height=600')
        return false
-    })
+    )
 
     # Signup toggle
     $('.signup').click ->
@@ -87,12 +87,12 @@ initMap = () ->
       $this = $(this)
 
       if $('#mobile-header').is(':visible')
-        $this.fadeOut(500, () ->
+        $this.fadeOut(500, ->
           $this.text('☰').fadeIn(500)
           return
         )
       else
-        $this.fadeOut(500, () ->
+        $this.fadeOut(500, ->
           $this.text('✕').fadeIn(500)
           return
         )
@@ -105,7 +105,7 @@ initMap = () ->
     $(document).click ->
       if $('#mobile-header').is(':visible')
         $('#mobile-header').slideUp()
-        $('#mobile-header-toggle').fadeOut(500, () ->
+        $('#mobile-header-toggle').fadeOut(500, ->
           $('#mobile-header-toggle').text('☰').fadeIn(500)
           return
         )
@@ -114,8 +114,7 @@ initMap = () ->
     # Ajax form submission to google sheets
     $('form.register').submit (event) ->
       request
-      if request
-        request.abort()
+      request.abort() if request
 
       $form = $(this)
       $inputs = $form.find('input, select, button, textarea')
@@ -127,7 +126,7 @@ initMap = () ->
         dataType: 'jsonp',
         data: serializedData
       )
-      request.always( () ->
+      request.always( ->
         $inputs.prop('disabled', false)
         window.location.reload()
         return
