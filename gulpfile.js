@@ -19,7 +19,7 @@ gulp.task('watch', function () {
   gulp.watch("public/*.jade", browserSync.reload);
   gulp.watch("sass/*.sass", browserSync.reload);
   gulp.watch("public/css/*.sass", browserSync.reload);
-  gulp.watch("public/js/*.js", browserSync.reload);
+  gulp.watch("public/js/*.coffee", browserSync.reload);
   gulp.watch("*.json", browserSync.reload);
 });
 
