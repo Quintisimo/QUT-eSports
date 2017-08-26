@@ -1,5 +1,6 @@
 # QUT-eSports
-* A website for QUT eSports built using [harpjs](http://harpjs.com/) and hosted on [netlify](https://www.netlify.com/)
+* A website for QUT eSports built using [harpjs](http://harpjs.com/) and [gulpjs](https://gulpjs.com/)
+* The website is hosted on [netlify](https://www.netlify.com/)
 * To start the server locally run: gulp
 
 Languages used:
