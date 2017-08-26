@@ -4,12 +4,8 @@ include _mixins
 section#about
   h1.heading About Us
   #staff
-  
-    // Looping through staff members in harp.json
-    each person, index in staff
-      .person
-        img(src='#{ person }')
-        span #{ index }
+    .person
+      img(src='images/staff/group.jpg')
         
   p #{ about }
   
