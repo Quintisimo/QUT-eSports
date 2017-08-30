@@ -1,0 +1,22 @@
+include _mixins
++computer-header('games')
+
+section#games
+  h1.heading Our Games 
+  p (Click the banner to learn more)
+  
+  // Looping throught each game and its info in harp.json
+  each game, index in games
+    .game
+      img(src='#{ game.image }', title='Click to learn more..')  
+      .game-details
+        h2 About the game...
+        p #{ game.about }
+        p #{ game.strategy }
+        //- h2 Management Team
+        //- .team-faces
+        //-   each member, index in game.members
+        //-     .person
+        //-       img(src='#{ member }')
+        //-       p #{ index }
+        //- p #{ game.goals }

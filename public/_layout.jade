@@ -1,29 +1,29 @@
+// Layout of every page of the website
 include _mixins
 
-doctype html
+doctype
 html
-
   head
-    title=records.data.title
-    link(href='img/title.png' rel='icon' type='image/x-icon')
+    title #{ title }
+    link(href='css/style.css', rel='stylesheet', type='text/css')
+    link(href='images/title.png' rel='icon' type='image/x-icon')
     link(href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css' rel='stylesheet' type='text/css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js' type='text/javascript')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/gcal.min.js' type='text/javascript')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    != css()
-    != js()
-    script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDhn9Y5Fp0kCaERklzzrKYruISRfvw1URc')
-
+    script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDhn9Y5Fp0kCaERklzzrKYruISRfvw1URc&callback=initMap')
+    script(src='js/script.js' type='text/javascript')
+    meta(name='viewport', content='width = device-width, initial-scale = 1')
   body
+  
     // Website header navigation for mobile
     #mobile-header
-      a(href='index.html') Home
-      a(href='events.html') Events
-      a(href='games.html') Games
-      a(href='socials.html') Socials
-      a(href='about.html') About
+      a(href='index') Home
+      a(href='events') Events
+      a(href='games') Games
+      a(href='socials') Socials
+      a(href='about') About
       //span.signup Signup
     #background
     
@@ -45,4 +45,4 @@ html
     //-     +games('Rocket League')
     //-   h2 If you would like to pay your membership fees please #[a(target='_blank', href='https://pay.qut.edu.au/QUTeSportsSem2Membership') click here]
     //-   input.button(type='submit')
-    block content
+    !=yield

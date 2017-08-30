@@ -1,0 +1,51 @@
+// Webite header navigation on desktop
+mixin computer-header(page)
+  header
+    a(href='index')
+      img(src='images/logo.png')
+    h1#mobile-header-toggle ☰
+    nav
+      if page == 'index'
+        a(href='index')#is-active Home
+        a(href='events') Events
+        a(href='games') Games
+        a(href='socials') Socials
+        a(href='about') About
+        //span.signup Signup
+      if page == 'about'
+        a(href='index') Home
+        a(href='events') Events
+        a(href='games') Games
+        a(href='socials') Socials
+        a(href='about')#is-active About
+        //span.signup Signup
+      if page == 'games'
+        a(href='index') Home
+        a(href='events') Events
+        a(href='games')#is-active Games
+        a(href='socials') Socials
+        a(href='about') About
+        //span.signup Signup
+      if page == 'events'
+        a(href='index') Home
+        a(href='events')#is-active Events
+        a(href='games') Games
+        a(href='socials') Socials
+        a(href='about') About
+        //span.signup Signup
+      if page == 'socials'
+        a(href='index') Home
+        a(href='events') Events
+        a(href='games') Games
+        a(href='socials')#is-active Socials
+        a(href='about') About
+        //span.signup Signup
+
+// Games list for sigup form
+//- mixin games(game)
+//-   .form-game
+//-     p #{ game }
+//-     input(type='radio', value='yes', name='#{ game }')
+//-     span Yes
+//-     input(type='radio', value='no', name='#{ game }', checked)
+//-     span No
