@@ -12,28 +12,27 @@
 
 # Google maps
 initMap = ->
-  if document.getElementById('map')
-    location =
-      lat: -27.477327,
-      lng: 153.030078
-    map = new google.maps.Map(document.getElementById('map'),
-      zoom: 17,
-      center: location,
-      scrollwheel: false
-    )
-    contentString = '<h1>X Block Gardens Point</h1><img src="../images/map/x block.jpg">'
-    infowindow = new google.maps.InfoWindow (
-      content: contentString
-    )
-    marker = new google.maps.Marker(
-      position: location,
-      map: map,
-      icon: '../images/map/marker.png'
-    )
-    marker.addListener('click', () ->
-      infowindow.open(map, marker)
-      return
-    )
+  location =
+    lat: -27.477327,
+    lng: 153.030078
+  map = new google.maps.Map(document.getElementById('map'),
+    zoom: 17,
+    center: location,
+    scrollwheel: false
+  )
+  contentString = '<h1>X Block Gardens Point</h1><img src="../img/map/x block.jpg">'
+  infowindow = new google.maps.InfoWindow (
+    content: contentString
+  )
+  marker = new google.maps.Marker(
+    position: location,
+    map: map,
+    icon: '../img/map/marker.png'
+  )
+  marker.addListener('click', () ->
+    infowindow.open(map, marker)
+    return
+  )
   return
 
 # jQuery
@@ -110,6 +109,8 @@ initMap = ->
           return
         )
       return
+
+    initMap()
 
     # Ajax form submission to google sheets
     # $('form.register').submit (event) ->

@@ -1,13 +1,13 @@
 // Imports all sytlesheets
-@import sass/font.sass
-@import sass/vars
-@import sass/header
-@import sass/index
-@import sass/about
-@import sass/games
-@import sass/events
-@import sass/socials
-@import sass/mixins
+@import '_vars'
+@import '_font'
+@import '_mixins'
+@import '_header'
+@import '_index'
+@import '_about'
+@import '_games'
+@import '_events'
+@import '_socials'
 
 // Removes default padding and margins
 html, body, h1, h2
@@ -61,7 +61,7 @@ body
     border: none
     background: $grey
     color: inherit
-    +placeholder(white)
+    placeholder(white)
 
   .button
     background: darken($orange, 5%)
@@ -80,9 +80,8 @@ body
     width: 100%
     z-index: -1
     overflow: hidden
-    background:
-      image: url(../images/background.svg)
-      size: cover
+    background-image: url(../img/background.svg)
+    background-size: cover
 
   // #overlay
   //   position: fixed
