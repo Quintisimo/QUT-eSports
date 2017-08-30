@@ -1,0 +1,51 @@
+// Webite header navigation on desktop
+mixin computer-header(page)
+  header
+    a(href='index.html')
+      img(src='img/logo.png')
+    h1#mobile-header-toggle ☰
+    nav
+      if page == 'index'
+        a(href='index.html')#is-active Home
+        a(href='events.html') Events
+        a(href='games.html') Games
+        a(href='socials.html') Socials
+        a(href='about.html') About
+        //span.signup Signup
+      if page == 'about'
+        a(href='index.html') Home
+        a(href='events.html') Events
+        a(href='games.html') Games
+        a(href='socials.html') Socials
+        a(href='about.html')#is-active About
+        //span.signup Signup
+      if page == 'games'
+        a(href='index.html') Home
+        a(href='events.html') Events
+        a(href='games.html')#is-active Games
+        a(href='socials.html') Socials
+        a(href='about.html') About
+        //span.signup Signup
+      if page == 'events'
+        a(href='index.html') Home
+        a(href='events.html')#is-active Events
+        a(href='games.html') Games
+        a(href='socials.html') Socials
+        a(href='about.html') About
+        //span.signup Signup
+      if page == 'socials'
+        a(href='index.html') Home
+        a(href='events.html') Events
+        a(href='games.html') Games
+        a(href='socials.html')#is-active Socials
+        a(href='about.html') About
+        //span.signup Signup
+
+// Games list for sigup form
+//- mixin games(game)
+//-   .form-game
+//-     p #{ game }
+//-     input(type='radio', value='yes', name='#{ game }')
+//-     span Yes
+//-     input(type='radio', value='no', name='#{ game }', checked)
+//-     span No
