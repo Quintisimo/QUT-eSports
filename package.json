@@ -1,10 +1,14 @@
 {
   "name": "QUT-eSports",
   "description": "A website for QUT eSports",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development roots watch"
+  },
   "dependencies": {
     "autoprefixer-stylus": "0.9.x",
     "axis": "0.6.x",
     "coffee-script": "1.x",
+    "cross-env": "^5.0.5",
     "css-pipeline": "0.3.x",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
