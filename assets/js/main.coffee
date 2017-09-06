@@ -110,8 +110,6 @@ initMap = ->
         )
       return
 
-    initMap()
-
     # Ajax form submission to google sheets
     # $('form.register').submit (event) ->
     #   request

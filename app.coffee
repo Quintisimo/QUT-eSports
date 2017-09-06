@@ -20,6 +20,7 @@ module.exports =
 
   'coffee-script':
     sourcemap: true
+    bare: true
 
-  jade:
+  pug:
     pretty: true

@@ -14,5 +14,8 @@ module.exports =
     records(data: {file: 'data.json'})
   ]
 
+  'coffee-script':
+    bare: true
+
   stylus:
     use: [axis(), rupture(), autoprefixer()]
