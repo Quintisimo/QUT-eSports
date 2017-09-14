@@ -8,8 +8,8 @@ block content
     h1.heading Our Games 
     p (Click the banner to learn more)
     
-    // Looping throught each game and its info in data.json
-    each game, index in records.data.games
+    // Looping throught each game and its info in games.yaml
+    each game, index in data.games
       .game
         img(src=game.image, title='Click to learn more..')  
         .game-details

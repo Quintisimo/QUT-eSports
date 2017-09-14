@@ -3,7 +3,7 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
-records      = require 'roots-records'
+yaml         = require 'roots-yaml'
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
@@ -11,7 +11,7 @@ module.exports =
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee', out: 'js/build.js', minify: true, hash: true),
     css_pipeline(files: 'assets/css/*.styl', out: 'css/build.css', minify: true, hash: true),
-    records(data: {file: 'data.json'})
+    yaml(source: 'data')
   ]
 
   'coffee-script':
