@@ -26,7 +26,7 @@ body
 
   section
     absolute(bottom 0)
-    size: 100% calc(100% - 8rem)
+    size(100% calc(100% - 8rem))
 
     h1
       font-size: 2.5rem
@@ -78,7 +78,7 @@ body
     size: 100% 200%
     z-index: -1
     overflow: hidden
-    background-image: url('../img/background.svg')
+    bg('../img/background.svg', center)
     background-size: cover
 
   // #overlay
@@ -88,48 +88,48 @@ body
   //   overflow: hidden
   //   z-index: 150
   //   background: $shadow
-
-  .register
-    fixed(top 50% left calc(50% - 16rem))
-    size: 32rem auto
-    background: rgba($light-blue, 0.8)
-    padding: 20px 0
-    border-radius: 20px
-    transform: translateY(-200%)
-    transition: all 0.5s ease-in-out
-    z-index: 200
-
-    &.is-active
-      transform: translateY(-50%)
-
-    .close
-      font-size: 1.2rem
-      absolute(top 10px right 15px)
-      cursor: pointer
-
-    h1, h2
-      text-align: center
-      margin: 10px
-
-    .form
-      padding: 5px 0
-
-    .form-game
-      margin: 10px 0
-      display: inline-block
-      width: 50%
-      text-align: center
-
-    input
-      margin: 5px auto
-
-    span
-      padding: 0 10px
-
-    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
-      -webkit-appearance: none
-      margin: 0
-
-    input[type="submit"]
-      display: block
-      text-align: center
+  //
+  // .register
+  //   fixed(top 50% left calc(50% - 16rem))
+  //   size(32rem auto)
+  //   background: rgba($light-blue, 0.8)
+  //   padding: 20px 0
+  //   border-radius: 20px
+  //   transform: translateY(-200%)
+  //   transition: all 0.5s ease-in-out
+  //   z-index: 200
+  //
+  //   &.is-active
+  //     transform: translateY(-50%)
+  //
+  //   .close
+  //     font-size: 1.2rem
+  //     absolute(top 10px right 15px)
+  //     cursor: pointer
+  //
+  //   h1, h2
+  //     text-align: center
+  //     margin: 10px
+  //
+  //   .form
+  //     padding: 5px 0
+  //
+  //   .form-game
+  //     margin: 10px 0
+  //     inline-block()
+  //     width: 50%
+  //     text-align: center
+  //
+  //   input
+  //     margin: 5px auto
+  //
+  //   span
+  //     padding: 0 10px
+  //
+  //   input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+  //     -webkit-appearance: none
+  //     margin: 0
+  //
+  //   input[type="submit"]
+  //     display: block
+  //     text-align: center
