@@ -1,3 +1,6 @@
+#Real World Futures date
+countDownDate = new Date("Oct 17, 2017 10:00:00").getTime()
+
 # Facebook widget
 ((d, s, id) ->
   js
@@ -12,27 +15,28 @@
 
 # Google maps
 initMap = ->
-  location =
-    lat: -27.477327,
-    lng: 153.030078
-  map = new google.maps.Map(document.getElementById('map'),
-    zoom: 17,
-    center: location,
-    scrollwheel: false
-  )
-  contentString = '<h1>X Block Gardens Point</h1><img src="../img/map/x block.jpg">'
-  infowindow = new google.maps.InfoWindow (
-    content: contentString
-  )
-  marker = new google.maps.Marker(
-    position: location,
-    map: map,
-    icon: '../img/map/marker.png'
-  )
-  marker.addListener('click', () ->
-    infowindow.open(map, marker)
-    return
-  )
+  if document.getElementById('map')
+    location =
+      lat: -27.477327,
+      lng: 153.030078
+    map = new google.maps.Map(document.getElementById('map'),
+      zoom: 17,
+      center: location,
+      scrollwheel: false
+    )
+    contentString = '<h1>X Block Gardens Point</h1><img src="../img/map/x block.jpg">'
+    infowindow = new google.maps.InfoWindow (
+      content: contentString
+    )
+    marker = new google.maps.Marker(
+      position: location,
+      map: map,
+      icon: '../img/map/marker.png'
+    )
+    marker.addListener('click', () ->
+      infowindow.open(map, marker)
+      return
+    )
   return
 
 # jQuery
@@ -109,6 +113,22 @@ initMap = ->
           return
         )
       return
+
+    #Countdown to tournament
+    x = setInterval((->
+      now = new Date().getTime();
+      distance = countDownDate - now
+      days = Math.floor(distance / (1000 * 60 * 60 * 24))
+      hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      seconds = Math.floor((distance % (1000 * 60)) / 1000)
+      $('#timer').text("#{days}d #{hours}h #{minutes}m #{seconds}s")
+
+      if distance < 0
+        clearInterval(x)
+        $('#timer').text('Expired')
+      return
+    ), 1000)
 
     # Ajax form submission to google sheets
     # $('form.register').submit (event) ->
