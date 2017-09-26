@@ -1,65 +1,65 @@
 header
   fixed()
-  display: flex
-  align-items: center
-  justify-content: space-between
+  display flex
+  align-items center
+  justify-content space-between
   size(100% 8rem)
-  background: $light-blue
-  box-shadow: 0 5px 15px $shadow
-  z-index: 100
+  background $light-blue
+  box-shadow 0 5px 15px $shadow
+  z-index 100
 
   img
     size(10rem)
-    margin-left: 20px
-    padding-top: 20px
+    margin-left 20px
+    padding-top 20px
 
   nav
-    margin-right: 20px
+    margin-right 20px
 
     a, .signup
-      margin-left: 20px
-      padding: 10px 30px
-      text-decoration: none
-      background: $light-blue
-      border: 2px solid white
-      border-radius: 20px
-      cursor: pointer
+      margin-left 20px
+      padding 10px 30px
+      text-decoration none
+      background $light-blue
+      border 2px solid white
+      border-radius 20px
+      cursor pointer
 
-      &:hover, &#is-active
-        background: $dark-blue
+      &hover, &#is-active
+        background $dark-blue
 
-  @media (max-width: 1000px)
+  @media (max-width 1000px)
     img
-      padding-top: 10px
+      padding-top 10px
 
     nav
-      display: none
+      display none
 
 #mobile-header-toggle
-  display: none
-  margin-right: 20px
-  font-size: 3rem
+  display none
+  margin-right 20px
+  font-size 3rem
 
-@media (max-width: 1000px)
+@media (max-width 1000px)
   #mobile-header-toggle
-    display: block
+    display block
 
 #mobile-header
-  display: none
+  display none
   fixed()
-  margin-top: 8rem
-  width: 100%
-  background: $light-blue
-  z-index: 2
+  margin-top 8rem
+  width 100%
+  background $light-blue
+  z-index 2
 
   a, .signup
-    display: block
-    font-size: 2rem
-    padding: 10px 0
-    border-bottom: solid 2px white
-    color: inherit
-    text-decoration: none
-    text-align: center
+    display block
+    font-size 2rem
+    padding 10px 0
+    border-bottom solid 2px white
+    color inherit
+    text-decoration none
+    text-align center
 
   .signup
-    border-bottom: none
+    border-bottom none
