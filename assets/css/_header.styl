@@ -1,22 +1,25 @@
 header
-  fixed()
-  display flex
-  align-items center
-  justify-content space-between
+  fixed(top 0)
   size(100% 8rem)
   background $light-blue
   box-shadow 0 5px 15px $shadow
   z-index 100
 
   img
-    size(10rem)
+    size(10rem 5rem)
+    float left
+    vertically-align()
     margin-left 20px
-    padding-top 20px
 
   nav
     margin-right 20px
+    vertically-align()
+    float right
 
-    a, .signup
+    @media (max-width 1000px)
+      display none
+
+    a
       margin-left 20px
       padding 10px 30px
       text-decoration none
@@ -28,21 +31,14 @@ header
       &hover, &#is-active
         background $dark-blue
 
-  @media (max-width 1000px)
-    img
-      padding-top 10px
-
-    nav
-      display none
-
 #mobile-header-toggle
   display none
-  margin-right 20px
-  font-size 3rem
 
-@media (max-width 1000px)
-  #mobile-header-toggle
-    display block
+  @media (max-width 1000px)
+    display inline-block
+    margin-right 20px
+    font-size 3rem
+    float right
 
 #mobile-header
   display none
@@ -52,7 +48,7 @@ header
   background $light-blue
   z-index 2
 
-  a, .signup
+  a
     display block
     font-size 2rem
     padding 10px 0
@@ -60,6 +56,3 @@ header
     color inherit
     text-decoration none
     text-align center
-
-  .signup
-    border-bottom none
