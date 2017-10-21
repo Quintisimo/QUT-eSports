@@ -1,4 +1,4 @@
-#Real World Futures date
+# Event date
 countDownDate = new Date("Oct 17, 2017 10:00:00").getTime()
 
 # Facebook widget
@@ -114,7 +114,7 @@ initMap = ->
         )
       return
 
-    #Countdown to tournament
+    # Countdown to event
     x = setInterval((->
       now = new Date().getTime();
       distance = countDownDate - now
