@@ -91,12 +91,12 @@ initMap = ->
 
       if $('#mobile-header').is(':visible')
         $this.fadeOut(500, ->
-          $this.text('☰').fadeIn(500)
+          $this.attr('src', 'img/mobile/nav.png').fadeIn(500)
           return
         )
       else
         $this.fadeOut(500, ->
-          $this.text('✕').fadeIn(500)
+          $this.attr('src', 'img/mobile/dismiss.png').fadeIn(500)
           return
         )
 
@@ -109,7 +109,7 @@ initMap = ->
       if $('#mobile-header').is(':visible')
         $('#mobile-header').slideUp()
         $('#mobile-header-toggle').fadeOut(500, ->
-          $('#mobile-header-toggle').text('☰').fadeIn(500)
+          $('#mobile-header-toggle').attr('src', 'img/mobile/nav.png').fadeIn(500)
           return
         )
       return

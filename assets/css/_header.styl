@@ -1,4 +1,7 @@
 header
+  display flex
+  justify-content space-between
+  align-items center
   fixed(top 0)
   size(100% 8rem)
   background $light-blue
@@ -7,14 +10,10 @@ header
 
   img
     size(10rem 5rem)
-    float left
-    vertically-align()
     margin-left 20px
 
   nav
     margin-right 20px
-    vertically-align()
-    float right
 
     @media (max-width 1000px)
       display none
@@ -28,17 +27,16 @@ header
       border-radius 20px
       cursor pointer
 
-      &hover, &#is-active
+      &:hover, &#is-active
         background $dark-blue
 
 #mobile-header-toggle
   display none
 
   @media (max-width 1000px)
-    display inline-block
+    display block
+    size(3rem)
     margin-right 20px
-    font-size 3rem
-    float right
 
 #mobile-header
   display none
