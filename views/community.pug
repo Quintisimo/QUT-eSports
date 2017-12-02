@@ -2,8 +2,19 @@ extends _layout
 
 block content
   include _mixins
-  +computer-header('events')
+  +computer-header('community')
 
+  section#socials
+    h1.heading Our Communites
+    #fb-root
+    #social-widgets
+      // Discord widget
+      iframe(src='https://discordapp.com/widget?id=283925065613967360&theme=dark', allowtransparency='true', frameborder='0')
+      
+      // Facebook widget
+      .fb-page(data-href='https://www.facebook.com/QUTeSports/', data-tabs='timeline',data-width='500', data-height='500', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+        blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/QUTeSports/')
+  
   section#events
     h1.heading Events Calendar
     // Events calendar
@@ -24,3 +35,4 @@ block content
             input(type='text', name='b_a47b185a851c1032f96bb3abb_f2f5f60545', tabindex='-1', value='')
           .clear
             input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+
