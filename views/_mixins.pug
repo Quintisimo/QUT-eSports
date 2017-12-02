@@ -5,31 +5,31 @@ mixin computer-header(page)
       img(src='img/logo.png')
     img(src='img/mobile/nav.png')#mobile-header-toggle
     nav
-      if page == 'index'
-        a(href='index.html')#is-active Home
-        a(href='community.html') Community
-        a(href='competition.html') Competition
-        a(href='academics.html') Academics
-        //span.signup Signup
       if page == 'academics'
-        a(href='index.html') Home
         a(href='community.html') Community
         a(href='competition.html') Competition
         a(href='academics.html')#is-active Academics
         //span.signup Signup
         //span.signup Signup
-      if page == 'community'
-        a(href='index.html') Home
+
+      else if page == 'community'
         a(href='community.html')#is-active Community
         a(href='competition.html') Competition
         a(href='academics.html') Academics
         //span.signup Signup
-      if page == 'competition'
-        a(href='index.html') Home
+
+      else if page == 'competition'
         a(href='community.html') Community
         a(href='competition.html')#is-active Competition
         a(href='academics.html') Academics
         //span.signup Signup
+
+      else
+        a(href='community.html') Community
+        a(href='competition.html') Competition
+        a(href='academics.html') Academics
+        //span.signup Signup
+
 
 // Games list for sigup form
 //- mixin games(game)
