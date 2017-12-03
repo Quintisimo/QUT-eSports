@@ -4,14 +4,13 @@
     flex-wrap wrap
     justify-content space-around
     align-items center
-    align-content center
-    padding-top 30px
 
     @media (max-width 1000px)
       padding-top 0
 
     iframe, .fb-page
       size(500px)
+      overflow hidden
 
       @media (max-width 1000px)
         size(400px)
@@ -24,6 +23,8 @@
       display block
 
 #events
+  margin-top 0
+
   #calendar
     font-family 'uvf_bourgeois_med'
     width calc(100% - 60px)
@@ -49,6 +50,32 @@
       color inherit
 
   #mc_embed_signup
-    display flex
-    justify-content center
-    padding 20px 0
+    padding-bottom 20px
+
+    .mc-field-group
+      display flex
+      flex-wrap wrap
+      justify-content center
+      align-items flex-end
+
+      .email
+        padding 10px
+        width 280px
+        outline none
+        border none
+        background $grey
+        color inherit
+        placeholder(white)
+
+      .button
+        margin 0 10px
+        background darken($orange, 5%)
+        outline none
+        border none
+        padding 10px
+        color inherit
+        font-family inherit
+        cursor pointer
+
+        @media(max-width 410px)
+          margin-top 20px

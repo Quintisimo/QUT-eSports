@@ -60,18 +60,6 @@ initMap = ->
        return false
     )
 
-    # Signup toggle
-    # $('.signup').click ->
-    #   $('.register').addClass('is-active')
-    #   $('#overlay').css('display', 'block')
-    #   return
-
-    # Dismiss signup
-    # $('.close').click ->
-    #   $('.register').removeClass('is-active')
-    #   $('#overlay').css('display', 'none')
-    #   return
-
     # Toggle game info
     $('.game').children('img').click ->
       $this = $(this)
@@ -129,28 +117,5 @@ initMap = ->
         $('#timer').text('Expired')
       return
     ), 1000)
-
-    # Ajax form submission to google sheets
-    # $('form.register').submit (event) ->
-    #   request
-    #   request.abort() if request
-    #
-    #   $form = $(this)
-    #   $inputs = $form.find('input, select, button, textarea')
-    #   serializedData = $form.serialize()
-    #   $inputs.prop('disabled', true)
-    #   request = $.ajax(
-    #     url: 'https://script.google.com/macros/s/AKfycbz4zbw4d6ZrH0vP12WcjlT0-n_PLOMd0h3IEDb6DH4UdD1e8d5X/exec',
-    #     type: 'post',
-    #     dataType: 'jsonp',
-    #     data: serializedData
-    #   )
-    #   request.always( ->
-    #     $inputs.prop('disabled', false)
-    #     window.location.reload()
-    #     return
-    #   )
-    #   event.preventDefault()
-    #   return
   return
 ) jQuery

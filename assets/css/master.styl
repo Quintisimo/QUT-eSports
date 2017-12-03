@@ -27,6 +27,7 @@ body
     size(100% calc(100% - 8rem))
 
     h1
+      margin-bottom 20px
       font-size 2.5rem
       text-align center
 
@@ -45,32 +46,6 @@ body
     color inherit
     cursor pointer
 
-  label, .email
-    font-family 'uvf_bourgeois_med'
-    font-size 1.5rem
-    display block
-
-  .email
-    margin 15px 5px
-    padding 10px
-    width 280px
-    outline none
-    border none
-    background $grey
-    color inherit
-    placeholder(white)
-
-  .button
-    background darken($orange, 5%)
-    outline none
-    border none
-    border-radius 10px
-    padding 10px
-    color inherit
-    font-family inherit
-    font-size 1rem
-    cursor pointer
-
   #background
     position fixed
     size 100% 200%
@@ -78,56 +53,3 @@ body
     overflow hidden
     bg('../img/background.svg', center)
     background-size cover
-
-  // #overlay
-  //   position fixed
-  //   display none
-  //   size 100% 110%
-  //   overflow hidden
-  //   z-index 150
-  //   background $shadow
-  //
-  // .register
-  //   fixed(top 50% left calc(50% - 16rem))
-  //   size(32rem auto)
-  //   background rgba($light-blue, 0.8)
-  //   padding 20px 0
-  //   border-radius 20px
-  //   transform translateY(-200%)
-  //   transition all 0.5s ease-in-out
-  //   z-index 200
-  //
-  //   &.is-active
-  //     transform translateY(-50%)
-  //
-  //   .close
-  //     font-size 1.2rem
-  //     absolute(top 10px right 15px)
-  //     cursor pointer
-  //
-  //   h1, h2
-  //     text-align center
-  //     margin 10px
-  //
-  //   .form
-  //     padding 5px 0
-  //
-  //   .form-game
-  //     margin 10px 0
-  //     inline-block()
-  //     width 50%
-  //     text-align center
-  //
-  //   input
-  //     margin 5px auto
-  //
-  //   span
-  //     padding 0 10px
-  //
-  //   input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
-  //     -webkit-appearance none
-  //     margin 0
-  //
-  //   input[type="submit"]
-  //     display block
-  //     text-align center
