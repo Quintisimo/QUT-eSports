@@ -3,10 +3,11 @@ extends _layout
 block content
   include _mixins
   +computer-header('competition')
+  +mobile-header('competition')
 
   section#games
     h1.heading Our Games 
-    p (Click the banner to learn more)
+    //- p (Click the banner to learn more)
     
     // Looping throught each game and its info in games.yaml
     each game, index in data.games
@@ -19,7 +20,7 @@ block content
             p=game.strategy
             //- h2 Management Team
             //- .team-faces
-            //-   each member, index in records.data.game.members
+            //-   each member, index in game.members
             //-     .person
             //-       img(src=member)
             //-       p=index

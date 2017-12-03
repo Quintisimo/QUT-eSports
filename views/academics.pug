@@ -3,17 +3,19 @@ extends _layout
 block content
   include _mixins
   +computer-header('academics')
+  +mobile-header('academics')
 
   section#about
     h1.heading Our Mission
     #staff
-      .person
+      .people
         img(src='img/staff/group.png')
-          
-    p=data.site.about
+      .about
+        p=data.site.about
     
     h1.heading Join Us
     #contact
       #map
-      p X224, X Block, QUT Gardens Point Campus, Brisbane, Queensland, Australia 4000
-      //a#email(href='mailto:qutesport@gmail.com') qutesport@gmail.com
+      .address
+        p X224, X Block, QUT Gardens Point Campus, Brisbane, Queensland, Australia 4000
+      //- a#email(href='mailto:qutesport@gmail.com') qutesport@gmail.com

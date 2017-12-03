@@ -2,14 +2,14 @@
   p
     font-size 1.8rem
     text-align justify
-    margin 10px
-    background rgba($light-blue, 0.6)
+    padding 10px
 
   #contact
-    margin 10px
 
     #map
       height 32rem
+      margin 10px
+      border-radius 5px
 
       h1
         color black
@@ -27,8 +27,16 @@
       background $light-blue
       word-wrap break-word
 
+  .about, .address
+    width calc(100% - 20px)
+    background rgba($light-blue, 0.6)
+    margin 10px
+    border-radius 5px
+
   #staff
-    .person
+    .people
       img
         size(calc(100% - 20px) 90%)
         margin  0 10px
+        border-radius 5px
+

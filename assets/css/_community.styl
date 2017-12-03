@@ -10,6 +10,7 @@
 
     iframe, .fb-page
       size(500px)
+      border-radius 5px
       overflow hidden
 
       @media (max-width 1000px)
@@ -58,23 +59,21 @@
       justify-content center
       align-items flex-end
 
-      .email
-        padding 10px
-        width 280px
+      input
+        border-radius 5px
         outline none
         border none
-        background $grey
+        padding 10px
         color inherit
+
+      input[type="email"]
+        width 280px
+        background $grey
         placeholder(white)
 
-      .button
+      input[type="submit"]
         margin 0 10px
         background darken($orange, 5%)
-        outline none
-        border none
-        padding 10px
-        color inherit
-        font-family inherit
         cursor pointer
 
         @media(max-width 410px)

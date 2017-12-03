@@ -9,33 +9,42 @@ mixin computer-header(page)
         a(href='community.html') Community
         a(href='competition.html') Competition
         a(href='academics.html')#is-active Academics
-        //span.signup Signup
-        //span.signup Signup
 
       else if page == 'community'
         a(href='community.html')#is-active Community
         a(href='competition.html') Competition
         a(href='academics.html') Academics
-        //span.signup Signup
 
       else if page == 'competition'
         a(href='community.html') Community
         a(href='competition.html')#is-active Competition
         a(href='academics.html') Academics
-        //span.signup Signup
 
       else
         a(href='community.html') Community
         a(href='competition.html') Competition
         a(href='academics.html') Academics
-        //span.signup Signup
 
 
-// Games list for sigup form
-//- mixin games(game)
-//-   .form-game
-//-     p #{ game }
-//-     input(type='radio', value='yes', name='#{ game }')
-//-     span Yes
-//-     input(type='radio', value='no', name='#{ game }', checked)
-//-     span No
+// Website header navigation on mobile
+mixin mobile-header(page)
+  #mobile-header
+    if page == 'academics'
+      a(href='community.html') Community
+      a(href='competition.html') Competition
+      a(href='academics.html')#is-active Academics
+    
+    else if page == 'community'
+      a(href='community.html')#is-active Community
+      a(href='competition.html') Competition
+      a(href='academics.html') Academics
+
+    else if page == 'competition'
+      a(href='community.html') Community
+      a(href='competition.html')#is-active Competition
+      a(href='academics.html') Academics
+
+    else
+      a(href='community.html') Community
+      a(href='competition.html') Competition
+      a(href='academics.html') Academics
