@@ -1,31 +1,4 @@
-#socials
-  #social-widgets
-    display flex
-    flex-wrap wrap
-    justify-content space-around
-    align-items center
-
-    @media (max-width 1000px)
-      padding-top 0
-
-    iframe, .fb-page
-      size(500px)
-      border-radius 5px
-      overflow hidden
-
-      @media (max-width 1000px)
-        size(400px)
-        margin 10px auto
-
-      @media (max-width 400px)
-        size(300px)
-
-    .fb-page
-      display block
-
 #events
-  margin-top 0
-
   #calendar
     font-family 'uvf_bourgeois_med'
     width calc(100% - 60px)
@@ -49,6 +22,33 @@
       outline none
       border none
       color inherit
+
+#socials
+  margin-top 0
+
+  #social-widgets
+    display flex
+    flex-wrap wrap
+    justify-content space-around
+    align-items center
+
+    @media (max-width 1000px)
+      padding-top 0
+
+    iframe, .fb-page
+      size(500px)
+      border-radius 5px
+      overflow hidden
+
+      @media (max-width 1000px)
+        size(400px)
+        margin 10px auto
+
+      @media (max-width 400px)
+        size(300px)
+
+    .fb-page
+      display block
 
   #mc_embed_signup
     padding-bottom 20px

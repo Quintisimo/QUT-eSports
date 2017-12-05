@@ -5,6 +5,12 @@ block content
   +computer-header('community')
   +mobile-header('community')
 
+  
+  section#events
+    h1.heading Events Calendar
+    // Events calendar
+    #calendar
+
   section#socials
     h1.heading Our Communites
     #fb-root
@@ -15,12 +21,7 @@ block content
       // Facebook widget
       .fb-page(data-href='https://www.facebook.com/QUTeSports/', data-tabs='timeline',data-width='500', data-height='500', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
         blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/QUTeSports/')
-  
-  section#events
-    h1.heading Events Calendar
-    // Events calendar
-    #calendar
-    
+
     h1.heading Sign Up To Our Newsletter
     // Mailchimp form
     #mc_embed_signup
@@ -34,4 +35,3 @@ block content
             #mce-success-response.response(style='display:none')
           div(style='position: absolute; left: -5000px;', aria-hidden='true')
             input(type='text', name='b_a47b185a851c1032f96bb3abb_f2f5f60545', tabindex='-1', value='')
-
