@@ -13,7 +13,7 @@ block content
     each game, index in data.games
       if game.club == true
         .game
-          img(src=game.image, title='Click to learn more..')  
+          img(src=game.banner, title='Click to learn more..')  
           .game-details
             h2 About the game...
             p=game.about

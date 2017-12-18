@@ -1,27 +1,20 @@
-#events
-  #calendar
-    font-family 'uvf_bourgeois_med'
-    width calc(100% - 60px)
-    margin 20px 30px
-    font-size 1.2rem
+#training
+  .training
+    display flex
+    flex-wrap wrap
+    justify-content space-around
 
-    .fc-other-month
-      opacity 0.8
+    .day
+      padding 20px
 
-    .fc-day
-      background lighten($grey, 5)
+      img
+        size(10rem)
+        display block
+        margin 0 auto
 
-      &.fc-today
-        background darken($grey, 5)
-
-    .fc-widget-header
-      background darken($grey, 5)
-
-    .fc-button
-      background $grey
-      outline none
-      border none
-      color inherit
+      p
+        font-size 2rem
+        text-align center
 
 #socials
   margin-top 0

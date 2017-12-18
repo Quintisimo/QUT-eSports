@@ -6,10 +6,15 @@ block content
   +mobile-header('community')
 
   
-  section#events
-    h1.heading Events Calendar
-    // Events calendar
-    #calendar
+  section#training
+    h1.heading Daily Training
+    .training
+      each game, index in data.games
+        if game.club == true
+          .day
+            img(src=game.logo)
+            p=index
+            p=game.training
 
   section#socials
     h1.heading Our Communites

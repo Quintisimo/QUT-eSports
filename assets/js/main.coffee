@@ -5,8 +5,7 @@ countDownDate = new Date("Oct 17, 2017 10:00:00").getTime()
 ((d, s, id) ->
   js
   fjs = d.getElementsByTagName(s)[0]
-  if d.getElementById(id)
-    return
+  if d.getElementById(id) then return
   js = d.createElement(s)
   js.id = id
   js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=263835507426067'
@@ -43,22 +42,6 @@ initMap = ->
 (($) ->
 
   $(document).ready ->
-
-    # Events calendar
-    $('#calendar').fullCalendar(
-      header:
-        left: 'title',
-        center: '',
-        right: 'today prev,next,'
-      ,
-      googleCalendarApiKey: 'AIzaSyDvSDhNmwU_AjpcV5zubFV5WqbqKxsGB2M',
-      events:
-        googleCalendarId: 'qutesport@gmail.com'
-      ,
-     eventClick: (event) ->
-       window.open(event.url, 'gcalevent', 'width=700,height=600')
-       return false
-    )
 
     # Toggle game info
     $('.game').children('img').click ->
