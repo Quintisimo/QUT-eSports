@@ -50,9 +50,9 @@ initMap = ->
       headerHeight = headerHeight.replace('px', '') * 8.5
 
       if !$('.game-details').is(':visible')
-        $('html, body').animate({
+        $('html, body').animate(
           scrollTop: $this.offset().top - headerHeight
-        })
+        )
       $this.siblings('.game-details').slideToggle()
       return
 
@@ -61,15 +61,10 @@ initMap = ->
       $this = $(this)
 
       if $('#mobile-header').is(':visible')
-        $this.fadeOut(500, ->
-          $this.attr('src', 'img/mobile/nav.png').fadeIn(500)
-          return
-        )
+        $this.css('transform', 'rotate(0deg)')
+
       else
-        $this.fadeOut(500, ->
-          $this.attr('src', 'img/mobile/dismiss.png').fadeIn(500)
-          return
-        )
+        $this.css('transform', 'rotate(180deg)')
 
       $('#mobile-header').slideToggle('slow')
       e.stopPropagation()
