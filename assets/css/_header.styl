@@ -33,12 +33,17 @@ header
 
 #mobile-header-toggle
   display none
+  margin-right 40px
 
   @media (max-width 1000px)
-    display block
+    display flex
+    justify-content center
+    align-items center
+
+  .arrow
+    absolute()
     icon-arrow(down, 30px, white, 5px)
     transition all 0.5s ease-in-out
-    margin-right 20px
 
 #mobile-header
   display none

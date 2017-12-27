@@ -58,13 +58,16 @@ initMap = ->
 
     # Animate mobile header button
     $('#mobile-header-toggle').click (e) ->
-      $this = $(this)
+      $top = $(this).children().first()
+      $bottom = $top.next()
 
       if $('#mobile-header').is(':visible')
-        $this.css('transform', 'rotate(0deg)')
+        $top.css('transform', 'translateY(0)')
+        $bottom.css('transform', 'rotateX(0deg) translateY(0)')
 
       else
-        $this.css('transform', 'rotate(180deg)')
+        $top.css('transform', 'translateY(-40%)')
+        $bottom.css('transform', 'rotateX(180deg) translateY(-30%)')
 
       $('#mobile-header').slideToggle('slow')
       e.stopPropagation()
