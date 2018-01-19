@@ -44,15 +44,22 @@ initMap = ->
   $(document).ready ->
 
     # Toggle game info
+    previousPosition = undefined
     $('.game').children('img').click ->
       $this = $(this)
       headerHeight = $('html').css('font-size')
       headerHeight = headerHeight.replace('px', '') * 8.5
 
       if !$('.game-details').is(':visible')
+        previousPosition = $(window).scrollTop()
         $('html, body').animate(
           scrollTop: $this.offset().top - headerHeight
         )
+      else
+        $('html, body').animate(
+          scrollTop: previousPosition
+        )
+
       $this.siblings('.game-details').slideToggle()
       return
 
