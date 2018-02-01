@@ -2,14 +2,6 @@
 countDownDate = new Date("Oct 17, 2017 10:00:00").getTime()
 
 # Facebook widget
-window.fbAsyncInit = ->
-  FB.init
-    appId: '143706059630045'
-    autoLogAppEvents: true
-    xfbml: true
-    version: 'v2.12'
-  return
-
 ((d, s, id) ->
   js
   fjs = d.getElementsByTagName(s)[0]
