@@ -11,7 +11,7 @@ block content
       each game in contentful.games
         if game.club == true
           .day
-            img(src=game.logo.fields.file.url)
+            img(src!=asset(game.logo))
             p=game.name
             p=game.training
 

@@ -10,7 +10,7 @@ block content
     each game in contentful.games
       if game.club == true
         .game
-          img(src=game.banner.fields.file.url, title='Click to learn more..')  
+          img(src!=asset(game.banner), title='Click to learn more..')  
           .game-details
             h2 About the game...
             p=game.about
