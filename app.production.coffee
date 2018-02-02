@@ -28,6 +28,9 @@ module.exports =
     sitemap(url: 'https://qutesports.com', folder: 'public', file: '**/*.html')
   ]
 
+  locals:
+    markdown: marked
+
   'coffee-script':
     bare: true
 
