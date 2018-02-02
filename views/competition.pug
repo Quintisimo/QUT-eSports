@@ -6,13 +6,11 @@ block content
 
   section#games
     h1.heading Our Games 
-    //- p (Click the banner to learn more)
-    
-    // Looping throught each game and its info in games.yaml
-    each game, index in data.games
+
+    each game in contentful.games
       if game.club == true
         .game
-          img(src=game.banner, title='Click to learn more..')  
+          img(src=game.banner.fields.file.url, title='Click to learn more..')  
           .game-details
             h2 About the game...
             p=game.about

@@ -14,7 +14,7 @@
     "marked": "^0.3.12",
     "pug": "^2.0.0-rc.4",
     "roots": "^5.2.0",
-    "roots-yaml": "0.0.4",
+    "roots-contentful": "^0.0.9",
     "rupture": "0.7.x",
     "stylus": "0.54.x",
     "webriq-roots-sitemap-v2": "^1.0.39"

@@ -6,8 +6,8 @@ block content
   
   section#home
     #heading
-      h1=data.site.title
-      p=data.site.lead
+      h1=contentful.sitedefaults[0].title
+      p=contentful.sitedefaults[0].lead
       a.button(target='_blank', href='') BECOME A MEMBER
       //- #wrapper.button
       //-   a(target='_blank', href='')

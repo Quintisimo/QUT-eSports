@@ -10,7 +10,7 @@ block content
       .people
         img(src='img/staff/group.png')
       .about
-        p=data.site.about
+        !=markdown(contentful.sitedefaults[0].about)
     
     h1.heading Join Us
     #contact

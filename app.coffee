@@ -3,8 +3,8 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
-yaml         = require 'roots-yaml'
-sitemap      = require 'webriq-roots-sitemap-v2'
+contentful   = require 'roots-contentful'
+marked       = require 'marked'
 
 module.exports =
   ignores: ['README.md', '**/_*', '.gitignore', 'ship.*conf']
@@ -12,9 +12,22 @@ module.exports =
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee'),
     css_pipeline(files: 'assets/css/*.styl'),
-    yaml(source: 'data'),
-    sitemap(url: 'https://qutesports.com', folder: 'public', file: '**/*.html')
+    contentful(
+      access_token: '3c50469956220004800ddf7e0d54f0ccb54660194c28501cb1bbc5ac5a043b12',
+      space_id: '2zktrm0vi1yp'
+      content_types:
+        sitedefaults:
+          id: 'sitedefaults',
+        games:
+          id: 'games',
+          filters: {
+            'order': 'sys.createdAt'
+          }
+    )
   ]
+
+  locals:
+    markdown: marked
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]

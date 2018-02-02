@@ -8,11 +8,11 @@ block content
   section#training
     h1.heading Daily Training
     .training
-      each game, index in data.games
+      each game in contentful.games
         if game.club == true
           .day
-            img(src=game.logo)
-            p=index
+            img(src=game.logo.fields.file.url)
+            p=game.name
             p=game.training
 
   section#socials
