@@ -8,7 +8,7 @@ block content
     #heading
       h1=contentful.sitedefaults[0].title
       p=contentful.sitedefaults[0].lead
-      a.button(target='_blank', href='') BECOME A MEMBER
+      a.button(target='_blank', href=contentful.sitedefaults[0].membershipLink) BECOME A MEMBER
       //- #wrapper.button
       //-   a(target='_blank', href='')
       //-     h2 Countdown to Real World Futures
